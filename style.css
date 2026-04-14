@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FDF5E6 ;
+    font-family: sans-serif;
+    color: #3b3b3b;
+}
+
+#navbar {
+    background: #E67E22;
+}
+
+#container {
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 20px 0;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+}
+
+.image-letter {
+    width: 100px; 
+    height: auto;  
+    display: block;
+}
+
+h2 {
+    padding: 50px 0px 10px 0px;
+}
+
+
+
