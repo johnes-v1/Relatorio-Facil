@@ -10,60 +10,40 @@
 <!-- Cabeçalho -->
 
 <body class="home">
-    <div id="navbar">
-        <div>
-            <div class="topo">
-                <img src="imagens/logo.png" alt="Imagem logo" class="image-letter" />
-                <h1 class="logo">Relatório Fácil</h1>
-            </div>
+    <<div id="app">
+
+        <!-- HEADER -->
+        <div class="header">
+            <img src="imagens/logo.png" class="logo-img">
+            <h1>Relatório Fácil</h1>
         </div>
-    </div>
 
-    <!--principal -->
-    <div id="container">
-        <section>
+        <!-- INPUT -->
+        <div class="card">
+            <h3>📥 Envie seus dados de vendas</h3>
+            <textarea id="inputData" placeholder="Ex: Produto A - 100, Produto B - 200"></textarea>
+            <button onclick="gerarRelatorio()">Gerar relatório</button>
+        </div>
 
-            <h2>Receba um relatório das suas vendas direto no WhatsApp</h2>
+        <!-- LOADING -->
+        <div id="loading" style="display:none;">
+            ⏳ Analisando dados...
+        </div>
 
-            <div id="dados-bi">
-                <div class="texto-data">
-                    <p>
-                        Transforme suas vendas em informações claras e rápidas. Envie seus dados e receba
-                        automaticamente um resumo completo com os principais números do seu negócio.
-                    </p>
-                </div>
+        <!-- RESULTADO -->
+        <div class="card" id="resultado" style="display:none;">
+            <h3>📊 Seu relatório</h3>
+            <p id="total"></p>
+            <p id="ticket"></p>
+            <p id="top"></p>
+        </div>
 
-                <div class="bi-image">
-                    <p>
-                        <img src="imagens/bi.png" alt="Imagem de um gráfico" class="image-bi" />
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h3>Benefícios:</h3>
-                <ul class="benefits-list">
-                    <li>💰 Veja quanto você vendeu no total</li>
-                    <li>📊 Descubra seu ticket médio</li>
-                    <li>📦 Saiba quais produtos mais vendem</li>
-                    <li>📅 Identifique seus melhores dias</li>
-                    <li>⚠️ Receba alertas importantes</li>
+        <!-- WHATSAPP -->
+        <a id="whatsappBtn" target="_blank" style="display:none;">
+            📲 Receber no WhatsApp
+        </a>
 
-                </ul>
-            </div>
-            
-            <div>
-                <p class="descricao">
-                    Nosso sistema foi feito para ser simples e rápido. Basta enviar suas informações de vendas, seja por planilha ou mensagem, e em poucos segundos nós analisamos tudo automaticamente para você. Em seguida, você recebe um relatório completo direto no WhatsApp, com os principais dados do seu negócio, como total vendido, produtos mais populares e desempenho por período. Sem complicação, sem precisar entender planilhas, apenas informações claras para te ajudar a tomar melhores decisões.
-                </p>
-            </div>
-
-        </section>
-    </div>
-
-    <a href="https://wa.me" class="btn-whatsapp" target="_blank">
-    <img src="imagens/whatsapp.png" alt="WhatsApp">
-</a>
-
+        </div>
 </body>
 
 </html>
